@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DPF Regeneracja 24</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f0f0; margin: 0; }
+    header { background: #333; color: #fff; padding: 20px; text-align: center; position: relative; }
+    .lang-switch { position: absolute; top: 20px; right: 20px; }
+    .lang-switch button { background: #555; color: #fff; border: none; padding: 5px 10px; margin-left: 5px; cursor: pointer; }
+    nav { background: #444; color: #fff; padding: 10px; text-align: center; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+    .container { padding: 20px; background: #fff; margin: 20px auto; max-width: 800px; }
+    footer { background: #333; color: #fff; text-align: center; padding: 10px; }
+  </style>
+  <script>
+    function switchLanguage(lang) {
+      if (lang === 'pl') {
+        document.getElementById('content-pl').style.display = 'block';
+        document.getElementById('content-de').style.display = 'none';
+      } else if (lang === 'de') {
+        document.getElementById('content-pl').style.display = 'none';
+        document.getElementById('content-de').style.display = 'block';
+      }
+    }
+  </script>
+</head>
+<body onload="switchLanguage('pl')">
+  <header>
+    <div class="lang-switch">
+      <button onclick="switchLanguage('pl')">PL</button>
+      <button onclick="switchLanguage('de')">DE</button>
+    </div>
+    <h1>DPF Regeneracja 24</h1>
+  </header>
+  <nav>
+    <a href="#home">Strona Główna</a>
+    <a href="#about">O Nas</a>
+    <a href="#pricing">Cennik</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+  <div class="container">
+    <section id="content-pl">
+      <h2>Witamy na stronie DPF Regeneracja 24</h2>
+      <p>Oferujemy profesjonalne czyszczenie i regenerację filtrów DPF oraz katalizatorów. Nasze usługi gwarantują wydłużenie żywotności filtrów przy konkurencyjnych cenach.</p>
+      <h3>O nas</h3>
+      <p>Jesteśmy specjalistami w dziedzinie regeneracji filtrów DPF. Nasza firma stawia na najwyższą jakość usług i zadowolenie klientów.</p>
+      <h3>Cennik</h3>
+      <ul>
+        <li>Czyszczenie DPF: 400€</li>
+        <li>Regeneracja katalizatorów: 500€</li>
+      </ul>
+      <h3>Kontakt</h3>
+      <p>Telefon: 017672832789</p>
+      <p>Email: <a href="mailto:filtr.dpf.kat@gmail.com">filtr.dpf.kat@gmail.com</a></p>
+    </section>
+    <section id="content-de" style="display:none;">
+      <h2>Willkommen bei DPF Regeneracja 24</h2>
+      <p>Wir bieten professionelle Reinigung und Regeneration von DPF-Filtern und Katalysatoren an. Unsere Dienstleistungen verlängern die Lebensdauer der Filter zu wettbewerbsfähigen Preisen.</p>
+      <h3>Über uns</h3>
+      <p>Wir sind Spezialisten im Bereich der DPF-Regeneration. Unser Unternehmen steht für höchste Qualität im Automobilservice.</p>
+      <h3>Preise</h3>
+      <ul>
+        <li>DPF-Reinigung: 400€</li>
+        <li>Katalysator-Regeneration: 500€</li>
+      </ul>
+      <h3>Kontakt</h3>
+      <p>Telefon: 017672832789</p>
+      <p>Email: <a href="mailto:filtr.dpf.kat@gmail.com">filtr.dpf.kat@gmail.com</a></p>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 DPF Regeneracja 24</p>
+  </footer>
+</body>
+</html>
